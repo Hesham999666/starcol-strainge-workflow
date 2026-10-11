@@ -377,6 +377,18 @@ requirements.
 
 ---
 
+# 10. License
+
+This workflow is released under the MIT License.
+
+See:
+
+    LICENSE
+
+for the full license text.
+
+---
+
 # Citation
 
 A formal citation for the associated manuscript and a Zenodo DOI for

@@ -8,7 +8,9 @@ authors:
     given-names: "Hesham"
     orcid: "https://orcid.org/0000-0001-9191-506X"
 
-version: "0.1.0"
+version: "1.0.0"
+license: "MIT"
+date-released: "2026-10-11"
 
 abstract: >-
   Computational workflow accompanying the STARCOL/REFIT2 strain-level
