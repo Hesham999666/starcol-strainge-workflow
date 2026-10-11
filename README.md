@@ -1,5 +1,8 @@
 # STARCOL StrainGE workflow
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23297876.svg)](https://doi.org/10.5281/zenodo.23297876)
+
+
 Reproducible strain-tracking workflow used for the study:
 
 **Strain-level analysis of donor Bifidobacterium engraftment after faecal microbiota transplantation in irritable bowel syndrome**
@@ -391,5 +394,8 @@ for the full license text.
 
 # Citation
 
-A formal citation for the associated manuscript and a Zenodo DOI for
-this workflow will be added when available.
+Archived software release:
+
+    DOI: 10.5281/zenodo.23297876
+
+Please cite both the associated manuscript and the archived software release when using this workflow.
