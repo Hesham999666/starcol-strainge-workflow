@@ -29,7 +29,7 @@ process readCounter {
 
 process Kmerize {
 //    publishDir "${params.outdir}/kmerize", mode: 'copy', overwrite: true
-    
+
     conda "${projectDir}/../environment/workflow.yml"
 
     cpus 1
@@ -38,7 +38,7 @@ process Kmerize {
     maxForks 4
 
     input:
-    tuple val(sample_id), path(reads) 
+    tuple val(sample_id), path(reads)
 
     output:
     tuple val(sample_id), path("${sample_id}.hdf5")
@@ -151,10 +151,10 @@ process CallStats {
     maxForks 15
 
     input:
-    tuple val(sample_id), 
+    tuple val(sample_id),
         path(ref_fasta), path(meta_json), path(repetitive_bed), path(collapsed_tsv),
         path(bam_file), path(bai_file)
-    
+
     output:
     tuple val(sample_id), path("${sample_id}.called.hdf5"), path("${sample_id}.called.tsv"), emit: callstats_out
 
@@ -169,7 +169,7 @@ process CallStats {
 
 process CallsSummer {
     publishDir "${params.outdir}/CallsSummer", mode: 'copy', overwrite: true
-    
+
     conda "${projectDir}/../environment/workflow.yml"
 
     cpus 1
@@ -202,7 +202,7 @@ process CallsSummer {
 
 process CallsSummedPlotter {
     publishDir "${params.outdir}/CallsSummedPlotted", mode: 'copy', overwrite: true
-    
+
     conda "${projectDir}/../environment/workflow.yml"
 
     cpus 1
@@ -229,7 +229,7 @@ process CallsSummedPlotter {
 ──────────────────────────────────────────────────────────────── */
 
 workflow {
-      
+
       paired_reads_ch = Channel.fromFilePairs(
           "${params.input_dir1}/*.fastq.gz",
           { file ->
@@ -261,7 +261,7 @@ workflow {
       callstats_out   = CallStats(ref_and_bam)
       combinedTables  = callstats_out.join(strains)
       combinedWithReads = combinedTables.join(total_reads)
-      
+
       summedCallsTSV  = CallsSummer(combinedWithReads)
 
       summed_ch = summedCallsTSV.map { id, tsv -> tsv }

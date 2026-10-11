@@ -75,7 +75,7 @@ process ConcatSummaries {
 
 process ComparisonPlotter {
     publishDir "${params.outdir}/ComparisonPlots", mode: 'copy', overwrite: true
-    
+
     conda "${projectDir}/../environment/workflow.yml"
 
     input:
@@ -127,4 +127,3 @@ workflow {
     // step 4: plot compared data
     ComparisonPlotter(merged_tsv_ch)
 }
-

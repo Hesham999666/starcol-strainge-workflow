@@ -255,5 +255,3 @@ pdf_path = output_path.with_suffix(".pdf")
 plt.tight_layout()
 plt.savefig(png_path, dpi=300, bbox_inches="tight")
 plt.savefig(pdf_path, bbox_inches="tight")
-
-
