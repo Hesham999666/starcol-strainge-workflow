@@ -1,0 +1,24 @@
+# Original internal workflow files kept locally for provenance only
+provenance/original_workflow/
+
+# Participant-level or controlled REFIT2 data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.hdf5
+*.hdf5.gz
+
+# Results and temporary workflow files
+results/
+work/
+.nextflow*
+*.out
+*.err
+*.html
+
+# OS/editor files
+.DS_Store
+*~

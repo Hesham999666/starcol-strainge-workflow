@@ -1,0 +1,3 @@
+comparison_id	recipient_id	recipient_timepoint	donor_id	donor_hdf5	recipient_hdf5
+recipient001_exactDonor_vs_T03	recipient001	T03	donor_sample_A	/path/to/donor_sample_A.called.hdf5	/path/to/recipient001_T03.called.hdf5
+recipient001_exactDonor_vs_T12	recipient001	T12	donor_sample_A	/path/to/donor_sample_A.called.hdf5	/path/to/recipient001_T12.called.hdf5

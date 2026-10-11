@@ -1,0 +1,68 @@
+# STARCOL / REFIT2 StrainGE classification criteria
+
+caller:
+
+  broad_detection:
+    abundance_metagenome:
+      operator: ">"
+      threshold: 0.0001
+      manuscript_percent: 0.01
+      description: "Reference-related signal exceeding 0.01% of the metagenome."
+
+  strict_detection:
+    abundance_metagenome:
+      operator: ">"
+      threshold: 0.0001
+      manuscript_percent: 0.01
+
+    callablePct:
+      operator: ">"
+      threshold: 0.10
+      manuscript_percent: 10
+
+    confirmedPct:
+      operator: ">="
+      threshold: 0.95
+      manuscript_percent: 95
+
+    snpPct:
+      operator: "<"
+      threshold: 0.01
+      manuscript_percent: 1
+
+    gapCount:
+      operator: "=="
+      threshold: 0
+
+    gapLength:
+      operator: "=="
+      threshold: 0
+
+compare:
+
+  donor_concordance:
+    commonPct:
+      operator: ">="
+      threshold: 0.10
+      manuscript_percent: 10
+
+    singleAgreePct:
+      operator: ">="
+      threshold: 0.9995
+      manuscript_percent: 99.95
+
+definitions:
+
+  confirmed_T03_engraftment:
+    - "strict Caller detection in recipient T03"
+    - "Compare concordance with the exact administered donor sample"
+
+  T12_persistence:
+    - "confirmed T03 engraftment"
+    - "strict Caller detection in recipient T12"
+    - "Compare concordance at T12 with the exact administered donor sample"
+
+notes:
+  - "Pct columns produced by the supplied aggregation scripts are stored as fractions from 0 to 1."
+  - "The manuscript reports these thresholds as percentages."
+  - "B. animalis was retained for descriptive analyses but excluded from the primary engraftment analyses because donor-concordant signals were also observed in placebo recipients."

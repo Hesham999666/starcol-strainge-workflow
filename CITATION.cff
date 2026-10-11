@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this workflow, please cite the associated manuscript and the archived software release."
+title: "STARCOL StrainGE workflow"
+type: software
+
+authors:
+  - family-names: "Amin"
+    given-names: "Hesham"
+    orcid: "https://orcid.org/0000-0001-9191-506X"
+
+version: "0.1.0"
+
+abstract: >-
+  Computational workflow accompanying the STARCOL/REFIT2 strain-level
+  analysis of donor Bifidobacterium engraftment after faecal microbiota
+  transplantation in irritable bowel syndrome. The repository includes
+  construction of a custom Donor B StrainGE reference database, StrainGE
+  Caller profiling, exact donor-recipient StrainGE Compare analysis, and
+  classification of donor-strain engraftment and persistence.
+
+keywords:
+  - StrainGE
+  - StrainGST
+  - StrainGR
+  - Bifidobacterium
+  - faecal microbiota transplantation
+  - FMT
+  - strain tracking
+  - shotgun metagenomics
+  - irritable bowel syndrome
+  - IBS
+  - REFIT2
+  - STARCOL
+
+repository-code: "https://github.com/Hesham999666/starcol-strainge-workflow"
+
+references:
+  - type: dataset
+    title: "Donor B bacterial isolate whole-genome sequencing data and draft genome assemblies"
+    identifiers:
+      - type: other
+        value: "PRJEB128176"
+        description: "European Nucleotide Archive study accession"
