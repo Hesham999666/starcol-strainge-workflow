@@ -1,6 +1,6 @@
 # STRACOL StrainGE workflow
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23297876.svg)](https://doi.org/10.5281/zenodo.23297876)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23362290.svg)](https://doi.org/10.5281/zenodo.23362290)
 
 
 Reproducible strain-tracking workflow used for the study:
@@ -396,6 +396,6 @@ for the full license text.
 
 Archived software release:
 
-    DOI: 10.5281/zenodo.23297876
+    DOI: 10.5281/zenodo.23362290
 
 Please cite both the associated manuscript and the archived software release when using this workflow.
