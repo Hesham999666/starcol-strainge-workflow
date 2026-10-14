@@ -1,4 +1,4 @@
-# STARCOL StrainGE workflow
+# STRACOL StrainGE workflow
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23297876.svg)](https://doi.org/10.5281/zenodo.23297876)
 
@@ -113,7 +113,7 @@ Create the environment with:
 
 and activate it with:
 
-    conda activate starcol-strainge
+    conda activate stracol-strainge
 
 Nextflow 24.04.2 should also be available on the system.
 
@@ -319,7 +319,7 @@ The classification scripts use these raw fractional values.
 
 # 7. Repository structure
 
-    starcol-strainge-workflow/
+    stracol-strainge-workflow/
     ├── README.md
     ├── nextflow.config
     ├── environment/
@@ -352,7 +352,7 @@ The classification scripts use these raw fractional values.
 # 8. Workflow provenance
 
 The public workflow was prepared from the computational scripts used
-during the STARCOL/REFIT2 strain-level analysis.
+during the STRACOL/REFIT2 strain-level analysis.
 
 Project-specific paths, usernames, data-transfer commands and
 participant identifiers have been removed from the public versions.

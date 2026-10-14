@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this workflow, please cite the associated manuscript and the archived software release."
-title: "STARCOL StrainGE workflow"
+title: "STRACOL StrainGE workflow"
 type: software
 
 authors:
@@ -14,7 +14,7 @@ license: "MIT"
 date-released: "2026-10-11"
 
 abstract: >-
-  Computational workflow accompanying the STARCOL/REFIT2 strain-level
+  Computational workflow accompanying the STRACOL/REFIT2 strain-level
   analysis of donor Bifidobacterium engraftment after faecal microbiota
   transplantation in irritable bowel syndrome. The repository includes
   construction of a custom Donor B StrainGE reference database, StrainGE
@@ -33,9 +33,9 @@ keywords:
   - irritable bowel syndrome
   - IBS
   - REFIT2
-  - STARCOL
+  - STRACOL
 
-repository-code: "https://github.com/Hesham999666/starcol-strainge-workflow"
+repository-code: "https://github.com/Hesham999666/stracol-strainge-workflow"
 
 references:
   - type: dataset

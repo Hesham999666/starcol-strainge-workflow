@@ -1,7 +1,7 @@
 # Workflow provenance
 
 This repository contains a public, cleaned version of the computational
-workflow accompanying the STARCOL/REFIT2 StrainGE strain-level analysis.
+workflow accompanying the STRACOL/REFIT2 StrainGE strain-level analysis.
 
 ## Components derived from surviving project code
 

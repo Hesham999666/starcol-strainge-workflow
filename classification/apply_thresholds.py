@@ -77,7 +77,7 @@ def classify_compare(path, outdir):
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Apply the STARCOL/REFIT2 StrainGE Caller and Compare "
+            "Apply the STRACOL/REFIT2 StrainGE Caller and Compare "
             "thresholds to aggregated workflow outputs."
         )
     )
